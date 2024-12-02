@@ -1,0 +1,22 @@
+services:
+  data_analysis_labs:
+    build: .
+    container_name: data_analysis_labs
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./lab1:/app/lab1
+      - ./lab2:/app/lab2
+      - ./lab3:/app/lab3
+    networks:
+      - lab_network
+    restart: unless-stopped
+
+volumes:
+  lab1:
+  lab2:
+  lab3:
+
+networks:
+  lab_network:
+    driver: bridge

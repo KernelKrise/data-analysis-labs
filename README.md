@@ -2,6 +2,11 @@
 
 Data Analysis 2024
 
+## Easy setup
+```
+docker compose up -d
+```
+
 ## Build
 
 ```
