@@ -20,7 +20,9 @@ RUN pip install --upgrade pip && \
     pandas \
     scipy \
     matplotlib \
-    seaborn
+    seaborn \
+    tensorflow-cpu \
+    keras
 
 # Create a directory for the notebooks
 WORKDIR /app
